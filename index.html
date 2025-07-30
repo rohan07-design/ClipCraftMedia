@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Css-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <title>Welcome to my Portfolio</title>
 </head>
+
 <body>
-    
+    <section id="heading">
+        <h1>Welcome to my Portfolio</h1>
+        <button type="button" id="editorBtn" class="btn btn-outline-secondary">Video Editor <i class="fa-solid fa-clapperboard"></i>
+</button>
+    </section>
+    <section id="aboutMe">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>About Me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus iusto neque, accusamus voluptas corporis
+                        sequi tenetur aliquam harum tempore eos ea, illum aliquid repellat molestiae quidem laborum saepe cumque
+                        id?</p>
+                </div>    
+                <div class="col-md-6">
+                    <div id="aboutImg">
+                        <img class="personImg" src="/images/bailey-mahon-2b6K4uy0Hbc-unsplash.jpg" alt="about me image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="myBackground">
+        <h1>My Background</h1>
+        <h3>Work Experience</h3>
+        <ul id="experience">
+            <li>Freelance video editor</li>
+            <li>
+                Have experience in Video editing
+                and social media management
+            </li>
+            <li>
+                worked with more than 30+ clients
+            </li>
+        </ul>
+    </section>
+    <section id="My Arts">
+        <h1>My Arts</h1>
+    </section>
+    <section id="desc">
+        <div id="arts">
+            <h1>Art speaks where words are unable to explain.</h1>
+        </div>
+        <div id="artsImg">
+
+        </div>
+    </section>
+    <section id="moreWork">
+        <h1>More of My Work</h1>
+    </section>
+    <section id="reachOut">
+        <h1>Reach out to Me</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <form id="forms">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="linkedin.com">LinkedIn</a>
+                    <a href="/">+91-7447299173</a>
+                    <a href="instagram.com">Instagram</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0 80px;
+    box-sizing: border-box;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+h1 {
+    font-size: 90px;
+}
+
+/* heading */
+#heading {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+#editorBtn {
+    color:#fff;
+    border-radius: 30px;
+    padding: 10px 80px;
+    font-size: 30px;
+    margin: 30px 30px;
+}
+
+/* about me */
+#aboutMe .personImg {
+    width: 100px;
+    height: 100px;
+}
+
+/* forms */
+#forms {
+    background-color: #e9e7e7;
+    color: #000;
+    padding: 30px 30px;
+    border-radius: 30px;
+}
