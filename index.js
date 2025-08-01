@@ -29,3 +29,36 @@ function scrollVideosNew(direction) {
   const videoWidth = newTrack.children[0].offsetWidth;
   newTrack.style.transform = `translateX(-${newIndex * videoWidth}px)`;
 }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1,
+  });
+
+  document.querySelectorAll('.slide-in').forEach(el => {
+    observer.observe(el);
+  });
+
+  const fadeUps = document.querySelectorAll('.fade-up-on-scroll');
+
+  const observerNew = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observerNew.unobserve(entry.target); // only animate once
+      }
+    });
+  }, {
+    threshold: 0.2
+  });
+
+  fadeUps.forEach(section => {
+    observerNew.observe(section);
+  });
+
+
