@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fevicon-->
+    <!-- Place this inside the <head> tag -->
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/x-icon">
+
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -31,21 +35,17 @@
             <div class="row">
                 <div class="col-md-6 col-12">
                     <h1 style="margin: 20px 0px;" class="slide-in">About Me</h1>
-                    <p>Hey, myself Vishal !
+                    <p><span class="highlight-on-load">Hey, myself Vishal !</span>
 
 
-                        I’m a visual storyteller with a
-                        passion of turning raw footage
-                        into compelling, scroll-stopping
-                        content. Whether it’s a
-                        YouTube vlog, or branded
-                        social media’sclips, I edit with
-                        shape emotion, pace, and
-                        impact to match your brand’s
-                        voice and vision. Fast, reliable,
-                        and creatively obsessed — let’s
-                        bring your story to life, frame
-                        by frame.</p>
+                        <span class="highlight-on-load">I'm a freelance video editor</span> with a passion for turning raw footage into impactful visual
+                        stories. <span class="highlight-on-load">With 2 years of experience in editing content</span> for brands, creators, and businesses, I
+                        specialize in crafting videos that engage, inspire, and convert.
+
+                        Whether it’s short-form content for social media, corporate promos, or YouTube content, I bring
+                        creativity, attention to detail, and fast turnaround to every project.
+
+                        Let’s create content that stands out.</p>
                 </div>
                 <div class="col-md-6 col-12">
                     <div id="aboutImg">
@@ -62,26 +62,91 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7">
-                    <h1 class="slide-in">My Background</h1>
+                    <h1 class="slide-in">What I Offer</h1>
                 </div>
                 <div class="col-md-5">
                     <div id="experienceDiv">
-                        <h3>Work Experience</h3>
                         <ul id="experience">
-                            <li>Freelance video editor</li>
-                            <li>
-                                Have experience in Video editing
-                                and social media management
+                            <li class="offers">Engaging Reels <i class="fas fa-film" style="color: #FF4C4C;"></i>
+</li>
+                            <li class="offers">
+                                Impactful Ads <i class="fas fa-bullhorn" style="color: #FF9900;"></i>
                             </li>
-                            <li>
-                                worked with more than 30+ clients
+                            <li class="offers">
+                                Cinematic Vlogs <i class="fas fa-video" style="color: #6A5ACD;"></i>
                             </li>
+                            <li class="offers">Persuasive Product Demo <i class="fas fa-box-open" style="color: rgba(255, 145, 145, 0.61);"></i></li>
+                            <li class="offers">Captivating Motion Graphics <i class="fas fa-magic" style="color: #009688;"></i></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section id="whatIOffer">
+  <div class="container">
+    <h1 class="mb-4 slide-in text-center">Tools I Used</h1>
+
+    <div class="scrolling-wrapper">
+      <div class="scroll-track">
+
+        <!-- Repeated set for smooth infinite scroll -->
+        <div class="offer-box">
+          <img src="./images/Adobe_After_Effects_CC_icon.svg" alt="Reels">
+          <h5>After Effects</h5>
+        </div>
+
+        <div class="offer-box">
+          <img src="./images/Adobe_Premiere_Pro_CC_icon.svg" alt="Ads">
+          <h5>Premiere Pro</h5>
+        </div>
+
+        <div class="offer-box">
+          <img src="./images/icons8-davinci-resolve.svg" alt="Vlogs">
+          <h5>Davinci Resolve</h5>
+        </div>
+
+        <div class="offer-box">
+          <img src="./images/capcut-icon.webp" alt="Product Demos">
+          <h5>Capcut </h5>
+        </div>
+
+        <div class="offer-box">
+          <img src="./images/adobe-illustrator-svgrepo-com.svg" alt="Motion Graphics">
+          <h5>Illustrator</h5>
+        </div>
+
+        <!-- Repeating again for smooth loop -->
+        <div class="offer-box">
+          <img src="./images/Adobe_After_Effects_CC_icon.svg" alt="Reels">
+          <h5>After Effects</h5>
+        </div>
+
+        <div class="offer-box">
+          <img src="./images/Adobe_Premiere_Pro_CC_icon.svg" alt="Ads">
+          <h5>Premiere</h5>
+        </div>
+
+        <div class="offer-box">
+          <img src="./images/icons8-davinci-resolve.svg" alt="Vlogs">
+          <h5>Davinci Resolve</h5>
+        </div>
+
+        <div class="offer-box">
+          <img src="./images/capcut-icon.webp" alt="Product Demos">
+          <h5>Capcut</h5>
+        </div>
+
+        <div class="offer-box">
+          <img src="./images/adobe-illustrator-svgrepo-com.svg" alt="Motion Graphics">
+          <h5>Illustrator</h5>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!--My Arts-->
     <!-- Reels Portfolio -->
@@ -99,40 +164,40 @@
             <div id="videoCarousel" class="d-flex overflow-hidden">
                 <div class="d-flex flex-nowrap video-track">
                     <div class="col-md-4 px-2">
-                        <iframe src="https://drive.google.com/file/d/1QoJVzDHORy9RBur0D-KNvyvlWKRqJixF/preview"
+                        <iframe class="gdrive-video" src="https://drive.google.com/file/d/1QoJVzDHORy9RBur0D-KNvyvlWKRqJixF/preview"
                             allow="autoplay" allowfullscreen></iframe>
                     </div>
                     <div class="col-md-4 px-2">
-                        <iframe src="https://drive.google.com/file/d/1IdpgHPCrBCGehXy0kGRcdLr-Hv-5vKfU/preview"
+                        <iframe class="gdrive-video" src="https://drive.google.com/file/d/1IdpgHPCrBCGehXy0kGRcdLr-Hv-5vKfU/preview"
                             allow="autoplay" allowfullscreen></iframe>
                     </div>
                     <div class="col-md-4 px-2">
-                        <iframe src="https://drive.google.com/file/d/1z_oEIzVqltttD72fLTWS1o_BP9Sa_kR4/preview"
+                        <iframe class="gdrive-video" src="https://drive.google.com/file/d/1z_oEIzVqltttD72fLTWS1o_BP9Sa_kR4/preview"
                             allow="autoplay" allowfullscreen></iframe>
                     </div>
                     <!-- Add more video divs as needed -->
                     <div class="col-md-4 px-2">
-                        <iframe src="https://drive.google.com/file/d/
+                        <iframe class="gdrive-video" src="https://drive.google.com/file/d/
 1TkIfyFBwm4EZ_3pz4HFcNCVCYq8oZG9U/preview" allow="autoplay" allowfullscreen></iframe>
                     </div>
                     <div class="col-md-4 px-2">
-                        <iframe src="https://drive.google.com/file/d/1XXVlbJ6VK2NZv2rg0iF5h_2bT0zna2c7/preview"
+                        <iframe class="gdrive-video" src="https://drive.google.com/file/d/1XXVlbJ6VK2NZv2rg0iF5h_2bT0zna2c7/preview"
                             allow="autoplay" allowfullscreen></iframe>
                     </div>
                     <div class="col-md-4 px-2">
-                        <iframe src="https://drive.google.com/file/d/1ftpse1FyLdyPp1inYLVEGI3W8oqRKFEn/preview"
+                        <iframe class="gdrive-video" src="https://drive.google.com/file/d/1ftpse1FyLdyPp1inYLVEGI3W8oqRKFEn/preview"
                             allow="autoplay" allowfullscreen></iframe>
                     </div>
                     <div class="col-md-4 px-2">
-                        <iframe src="https://drive.google.com/file/d/1Y05xSHZJgmOFPmiPwqFnW0IKfisM3Ji3/preview"
+                        <iframe class="gdrive-video" src="https://drive.google.com/file/d/1Y05xSHZJgmOFPmiPwqFnW0IKfisM3Ji3/preview"
                             allow="autoplay" allowfullscreen></iframe>
                     </div>
                     <div class="col-md-4 px-2">
-                        <iframe src="https://drive.google.com/file/d/1CaaWYOjRO3PzeRt3C-ju9e9jhn-AT0cz/preview"
+                        <iframe class="gdrive-video" src="https://drive.google.com/file/d/1CaaWYOjRO3PzeRt3C-ju9e9jhn-AT0cz/preview"
                             allow="autoplay" allowfullscreen></iframe>
                     </div>
                     <div class="col-md-4 px-2">
-                        <iframe src="https://drive.google.com/file/d/1JekKiTZDSz1wI7jYD9boFTRkBy2aYp6Y/preview"
+                        <iframe class="gdrive-video" src="https://drive.google.com/file/d/1JekKiTZDSz1wI7jYD9boFTRkBy2aYp6Y/preview"
                             allow="autoplay" allowfullscreen></iframe>
                     </div>
                 </div>
@@ -220,17 +285,19 @@
     <!-- Reach me out -->
     <section id="reachOut">
         <h1 class="slide-in">Reach out to Me</h1>
-        <div class="container">
+        <div class="container mb-4">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <form id="forms">
                         <div class="mb-3">
-                            <label for="exampleInputName" class="form-label">Full Name <i class="fa-solid fa-user"></i></label>
+                            <label for="exampleInputName" class="form-label">Full Name <i
+                                    class="fa-solid fa-user"></i></label>
                             <input type="text" class="form-control" id="exampleInputName" required>
                             <div class="invalid-feedback">Name must be at least 3 characters.</div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputNumber" class="form-label">Mobile No. <i class="fa-solid fa-phone"></i></label>
+                            <label for="exampleInputNumber" class="form-label">Mobile No. <i
+                                    class="fa-solid fa-phone"></i></label>
                             <input type="number" class="form-control" id="exampleInputNumber" required>
                             <div class="invalid-feedback">Mobile number must be exactly 10 digits.</div>
                         </div>
@@ -239,13 +306,15 @@
                                 <!-- Single comment bubble -->
                                 <i class="fas fa-envelope" style="color:#2f310a;"></i><!-- Multiple chat bubbles -->
                             </label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                required></textarea>
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
-                        <button type="submit" class="btn btn-secondary" disabled id="submitBtn">Submit <i class="fa-solid fa-arrow-right"></i>
+                        <button type="submit" class="btn btn-secondary" disabled id="submitBtn">Submit <i
+                                class="fa-solid fa-arrow-right"></i>
                         </button>
                     </form>
                 </div>
@@ -253,8 +322,8 @@
                     <h3 style="text-align: center;">Let's Connect Over: </h3>
                     <div class="social">
                         <a
-                            href="https://www.linkedin.com/in/vishal-matre-046249246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                                class="fab fa-linkedin" style="color:#0077B5;"></i>
+                            href="https://www.linkedin.com/in/vishal-matre-046249246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i
+                                class="fab fa-linkedin" style="color:#0077B5;" target="_blank"></i>
                             LinkedIn</a><br>
 
                     </div>
@@ -265,7 +334,7 @@
 
                     </div>
                     <div class="social">
-                        <a href="https://www.instagram.com/mr_vishal.31/?igsh=MTE1aHg2aHlhZ2FuYQ%3D%3D#"><i
+                        <a href="https://www.instagram.com/mr_vishal.31/?igsh=MTE1aHg2aHlhZ2FuYQ%3D%3D#" target="_blank"><i
                                 class="fab fa-instagram" style=" color: #E4405F;"></i>
                             Instagram</a>
 

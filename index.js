@@ -81,4 +81,20 @@ fadeUps.forEach(section => {
   nameInput.addEventListener('input', validateForm);
   mobileInput.addEventListener('input', validateForm);
 
+  // auto pause videos
+  const videos = document.querySelectorAll('.gdrive-video');
+
+  videos.forEach((iframe) => {
+    // Detect when the iframe is clicked (initiates play)
+    iframe.addEventListener('mouseenter', () => {
+      videos.forEach((otherIframe) => {
+        if (otherIframe !== iframe) {
+          // Pause other videos using postMessage
+          otherIframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+        }
+      });
+    });
+  });
+
+
 
