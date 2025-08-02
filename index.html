@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-md-6 col-12">
                     <div id="aboutImg">
-                        <img class="personImg" src="/images/bailey-mahon-2b6K4uy0Hbc-unsplash.jpg"
+                        <img class="personImg" src="./images/bailey-mahon-2b6K4uy0Hbc-unsplash.jpg"
                             alt="about me image" />
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                     <h1 class="slide-in" style="font-size: 60px;">Art speaks where words are unable to explain.</h1>
                 </div>
                 <div class="col-md-6">
-                    <img src="/images/nejc-soklic-2jTu7H9l6JA-unsplash.jpg" alt="image" />
+                    <img src="./images/nejc-soklic-2jTu7H9l6JA-unsplash.jpg" alt="image" />
                 </div>
             </div>
         </div>
@@ -225,29 +225,42 @@
                 <div class="col-12 col-md-6">
                     <form id="forms">
                         <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Full Name <i class="fa-solid fa-user"></i></label>
+                            <input type="text" class="form-control" id="exampleInputName" required>
+                            <div class="invalid-feedback">Name must be at least 3 characters.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputNumber" class="form-label">Mobile No. <i class="fa-solid fa-phone"></i></label>
+                            <input type="number" class="form-control" id="exampleInputNumber" required>
+                            <div class="invalid-feedback">Mobile number must be exactly 10 digits.</div>
+                        </div>
+                        <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Message </i>
                                 <!-- Single comment bubble -->
-                                	<i class="fas fa-envelope" style="color:#2f310a;"></i><!-- Multiple chat bubbles -->
+                                <i class="fas fa-envelope" style="color:#2f310a;"></i><!-- Multiple chat bubbles -->
                             </label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
                         </div>
                         <div class="mb-3 form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
-                        <button type="submit" class="btn btn-secondary">Submit <i class="fa-solid fa-arrow-right"></i>
+                        <button type="submit" class="btn btn-secondary" disabled id="submitBtn">Submit <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </form>
                 </div>
                 <div class="col-12 col-md-6 fade-up-on-scroll">
                     <h3 style="text-align: center;">Let's Connect Over: </h3>
                     <div class="social">
-                        <a href="https://www.linkedin.com/in/vishal-matre-046249246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin" style="color:#0077B5;"></i>
+                        <a
+                            href="https://www.linkedin.com/in/vishal-matre-046249246?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="fab fa-linkedin" style="color:#0077B5;"></i>
                             LinkedIn</a><br>
 
                     </div>
                     <div class="social">
-                        <a href="https://wa.me/919325836072" target="_blank"><i class="fab fa-whatsapp" style="color: #25D366;"></i>
+                        <a href="https://wa.me/919325836072" target="_blank"><i class="fab fa-whatsapp"
+                                style="color: #25D366;"></i>
                             +91-9325836072</a><br>
 
                     </div>
@@ -262,7 +275,7 @@
         </div>
         </div>
     </section>
-    
+
     <!--JavaScript-->
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
